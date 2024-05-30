@@ -1,10 +1,11 @@
+"""
 import zmq
 
 class EdgeQualitySystem:
     def __init__(self):
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.PULL)
-        self.socket.bind("tcp://10.43.100.158:5557")
+        self.socket.bind("tcp://10.43.100.158:5550")
 
     def procesar_alarma(self, mensaje):
         print(f"Alarma recibida en Edge: {mensaje}")
@@ -18,3 +19,5 @@ class EdgeQualitySystem:
 if __name__ == "__main__":
     edge_quality_system = EdgeQualitySystem()
     edge_quality_system.run()
+
+"""

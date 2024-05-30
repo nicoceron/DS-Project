@@ -1,3 +1,4 @@
+"""
 import zmq
 
 class QualitySystem:
@@ -28,3 +29,4 @@ class QualitySystem:
 if __name__ == "__main__":
     quality_system = QualitySystem()
     quality_system.run()
+"""

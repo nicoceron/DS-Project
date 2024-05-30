@@ -1,8 +1,9 @@
 from sensor_simulation import Sensor  # Importa la clase base desde el archivo sensor.py
 import random
 
+
 class SensorHumedad(Sensor):
-    def __init__(self,  tiempo, archivo_configuracion, tipo_sensor):
+    def __init__(self, tiempo, archivo_configuracion, tipo_sensor):
         super().__init__(tiempo, archivo_configuracion, tipo_sensor)
         self.configuracion = self.cargar_configuracion(archivo_configuracion)
 
